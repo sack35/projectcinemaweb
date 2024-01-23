@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CCIT-CINEMA Registration</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="projectstyle.css"  />
+<style>
+    
+</style>
+</head>
+<body onload="tampil()">
+    <div class="whiteimage"></div>
+
+    <div class="titleimage2">CCIT-CINEMA</div>
+    <div class="navigation">
+        <a href="mainproject.html">Menu</a>
+        <a href="registration.html">Register</a>
+        <a href="booking.html">Book Now</a>
+        <a href="information.html">Information</a>
+    </div>
+    <div class="whiteimage3"></div>
+    <fieldset>
+        <legend>Register Your Account</legend>
+        <div id="h2">
+        <h2> Create Your Account</h2>
+      </div>
+      <div id="form">
+      <div class="row">
+      <div class="columnleft">
+    <form>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="First Name"
+            required/>
+    
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Last Name"
+            required/>
+    </br>
+    </br>
+    Select Gender:
+          <input type="radio" id="jk" name="jk" value="Pria" checked/>Male
+          <input type="radio" id="jk" name="jk" value="Wanita"/>Female
+    </br>
+    </br>
+    Date Of Birth:
+          <input type="date" id="lahir" name="lahir"  required/>
+    <br />
+    </br>
+          <input type="email" id="email" name="email" placeholder="Email"required/>
+          <label> @gmail.com</label>
+    </br>
+          <label>You can use letters, numbers</label>
+          </br>
+          </br>
+          <input type="password" id="pass" name="pass" placeholder="Password" required/>
+          <input type="password" id="pass" name="pass" placeholder="Confirm Password" required/>
+          </br>
+          <label>Use 8 or more characters with a mix of letters, numbers</label>
+          </br>
+          <input type="checkbox" onclick="myFunction()">Show Password
+        </br>
+      </br>
+          <input type="submit" value="Register">
+          <div id="h2">
+    </fieldset>
+    </form>
+    </div>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("pass");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+        <div class="whiteimage"></div>
+        <div class="copyrightimage">This web is used for studies, training, and development only. We do not own any of the following movies above or even have the permission to use the movie as an experiment</div> 
+    </body>
+    </html>

@@ -1,0 +1,252 @@
+/* Image Style */
+.whiteimage{
+    background-color: rgb(255, 255, 255);
+    height: 75px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.whiteimage2{
+    background-color: rgb(255, 255, 255);
+    height: 10px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.whiteimage3{
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    font-family: sans-serif;
+    color: white;
+}
+
+.image4{
+    background-color: rgb(88, 145, 199);
+    height: 10px;
+    width: 1847pxpx;
+    position: center;
+
+}
+
+.titleimage{
+    background-color: rgb(88, 145, 199);
+    width: 1847px;
+    height: 75px;
+    padding: 20px;
+    text-align:left;
+    vertical-align: sub;
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.titleimage2{
+    background-color: rgb(88, 145, 199);
+    width: 1864px;
+    height: 75px;
+    padding: 20px;
+    text-align:left;
+    vertical-align: sub;
+    font-size: 75px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.copyrightimage{
+    background-color: rgb(88, 145, 199);
+    width: 1847px;
+    height: 60px;
+    padding: 20px;
+    text-align:center;
+    vertical-align: sub;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.navigation{
+    overflow: hidden;
+    background-color:rgb(221, 221, 221);
+}
+
+.navigation a{
+    float: left;
+    display: block;
+    color: rgb(88, 145, 199);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* ==================================================================================================================== */
+
+/* Image Style */
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+
+/* ==================================================================================================================== */
+/* Row and Column Style */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .columnleft {
+    float: left;
+    width: 60%;
+
+    font-family: sans-serif;
+  }
+
+  .columnright {
+    float: left;
+    width: 50%;
+
+    font-family: sans-serif;
+  }
+
+  .columnmid {
+    width: 22%;
+    float: left;
+    display: block;
+    margin: 85px;
+    padding: 5px;
+  }
+
+  .columninfo{
+    width: 60%;
+    float: left;
+    display: block;
+    margin: 85px;
+    padding: 5px;
+    font-size: 30px;
+  }
+
+  .singlecolumn{
+    background-color: rgb(88, 145, 199);
+    color:rgb(255, 255, 255);
+    float: left;
+    padding: 15px;
+    font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .columnleftleft {
+    position: relative;
+    left: 200px;
+    float: left;
+    width: 55%;
+
+    font-family: sans-serif;
+  }
+
+  .sinopsistitlefont{
+    font-family: 'Bahnschrift';
+  }
+
+/* ==================================================================================================================== */
+/* registration.html Style */
+
+  #h2 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    margin-top: 50px;
+    margin-left: 120px;
+  }
+
+  #form {
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+  
+/* ==================================================================================================================== */
+/* booking.html Style */
+
+  .form-input{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }
+  
+  .form-radio{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }
+  
+  .form-label{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }
+  
+  .form-button{
+    display: inline-block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin-top: 10px;
+  }

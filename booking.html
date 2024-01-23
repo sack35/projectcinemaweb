@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CCIT-CINEMA Booking</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="projectstyle.css"  />
+<style>
+    
+</style>
+</head>
+<body>
+    <div class="whiteimage"></div>
+
+    <div class="titleimage">CCIT-CINEMA</div>
+    <div class="navigation">
+        <a href="mainproject.html">Menu</a>
+        <a href="registration.html">Register</a>
+        <a href="booking.html">Book Now</a>
+        <a href="information.html">Information</a>
+    </div>
+    <div class="whiteimage3"></div>
+    <body>
+    <form name="form1" onsubmit="return booking();">
+        <fieldset>
+          <legend>Reserve Your Tickets</legend>
+          <label class="form-label" for="nama">Name</label>
+          <input class="form-input" type="text" id="nama" name="nama" placeholder="Enter Your Name" required />
+          <label class="form-label" for="tanggal">Date Of Bookings</label>
+          <input class="form-input" type="date" id="tanggal" name="tanggal" onchange="cektanggal()" required />
+          <label class="form-label" for="movie">Movie</label>
+          <select class="form-input" name="movie" id="movie">
+            <optgroup label="Action">
+              <option value="Thor: Love and Thunder">Thor: Love and Thunder</option>
+              <option value="Jurrasic World">Jurrasic World</option>
+              <option value="Death Race">Death Race</option>
+            </optgroup>
+            <optgroup label="Thriller">
+              <option value="Poltergeist">Poltergeist</option>
+              <option value="The Boy">The Boy</option>
+              <option value="Insidious">Insidious</option>
+            </optgroup>
+            <optgroup label="Romance">
+              <option value="Beauty And The Beast">Beauty And The Beast</option>
+              <option value="Cinderella">Cinderella</option>
+              <option value="La La Land">La La Land</option>
+            </optgroup>
+          </select>
+          <label class="form-label" for="timing">Show Timings</label>
+          <select class="form-input" name="timing" id="timing" required>
+            <option value="">Select Time</option>
+            <option value="11.30 PM">11.30 PM</option>
+            <option value="14.00 PM">14.00 PM</option>
+            <option value="16.30 PM">16:30 PM</option>
+            <option value="19.00 PM">19.00 PM</option>
+            <option value="21.30 PM">21.30 PM</option>
+          </select>
+          <label class="form-label" for="seatclass">Select Class</label>
+          <div class="form-radio">
+            <input type="radio" id="seatclass" name="seatclass" value="Premiere" onclick="hitung()" checked />
+            <label for="seatclass">Premiere</label>
+            <input type="radio" id="seatclass" name="seatclass" value="Gold" onclick="hitung()" />
+            <label for="seatclass">Gold</label>
+            <input type="radio" id="seatclass" name="seatclass" value="Regular" onclick="hitung()" />
+            <label for="seatclass">Regular</label>
+          </div>
+          <label class="form-label" for="harga">Price</label>
+          <input class="form-input" type="text" id="harga" name="harga" value="75000" disabled />
+          <label class="form-label" for="jumlah">Total Tickets</label>
+          <input class="form-input" min="0" type="number" id="jumlah" name="jumlah" placeholder="Enter Tickets" onchange="hitung()" required />
+          <label class="form-label" for="total">Total Price</label>
+          <input class="form-input" type="text" id="total" name="total" disabled />
+          <input class="form-button" id="submit" type="submit" />
+          <input class="form-button" id="reset" type="reset" />
+        </fieldset>
+      </form>
+      <fieldset>
+        <legend>output</legend>
+        <div class="form-label" id="output"></div>
+      </fieldset>
+  
+      <script src="projectscript.js"></script>
+      <div class="whiteimage"></div>
+      <div class="row"></div> 
+    <div class="copyrightimage">This web is used for studies, training, and development only. We do not own any of the following movies above or even have the permission to use the movie as an experiment</div> 
+    </body>
+  </html>
